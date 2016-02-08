@@ -37,9 +37,37 @@ var sentence = "This, is a poorly written sentence but; I'm writing it this way 
 console.log(sentence.split());
 returns [ 'This, is a poorly written sentence but; I\'m writing it this way anyway.' ]
 
+console.log(sentence.split(" "));
+returns [ 'This,',
+  'is',
+  'a',
+  'poorly',
+  'written',
+  'sentence',
+  'but;',
+  'I\'m',
+  'writing',
+  'it',
+  'this',
+  'way',
+  'anyway.' ]
 
+  console.log(sentence.split(",", 3));
+  returns [ 'This', ' is a poorly written sentence but; I\'m writing it this way anyway.' ]
+// This method has two possible parameters, both of which are optional. The first
+// is the separator you want to designate to split the array objects, and the second
+// is the limit of number of array objects you want to create
 
 // .join()
+
+var toBeJoined = ["I", "love", "computer", "science", 1, 2, 3];
+console.log(toBeJoined.join(), toBeJoined.join("@"));
+
+returns I,love,computer,science,1,2,3 I@love@computer@science@1@2@3
+
+// The one optional parameter for this method is the separator character
+// you want to use between the array objects when making it a string
+// typically, this would be a space
 
 // .pop()
 
@@ -48,6 +76,13 @@ returns [ 'This, is a poorly written sentence but; I\'m writing it this way anyw
 // .slice()
 
 // .splice()
+
+var goodness = ["good", "news", "is", 7, 3, 2, 9, "no", "news"];
+console.log(goodness.splice(1));
+
+returns [ 'news', 'is', 7, 3, 2, 9, 'no', 'news' ]
+
+//array.splice(start, deleteCount[, item1[, item2[, ...]]])
 
 // .shift()
 
