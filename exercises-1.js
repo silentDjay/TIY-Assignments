@@ -71,7 +71,20 @@ returns I,love,computer,science,1,2,3 I@love@computer@science@1@2@3
 
 // .pop()
 
+var doges = ["Mr.", "Blue", "Sky", "Birmingham", 8, "Howler"];
+
+console.log(doges.pop());
+returns Howler
+
 // .push()
+
+var doges = ["Mr.", "Blue", "Sky", "Birmingham", 8, "Howler"];
+
+console.log(doges.push());
+returns 6 //without passing a parameter, this method simply returns the array's length
+
+console.log(doges.push("Rottweiler", "Shi-tzu", "Schnauzer"));
+returns 9
 
 // .slice()
 
