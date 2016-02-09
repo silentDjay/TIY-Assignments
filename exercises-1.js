@@ -56,6 +56,8 @@ returns [ 'This,',
 // is the limit of number of array objects you want to create
 
 // .join()
+// creates a string from an array. Providing an optional argument will provide a character or string to
+// put between the former elements of the array
 
 var toBeJoined = ["I", "love", "computer", "science", 1, 2, 3];
 console.log(toBeJoined.join(), toBeJoined.join("@"));
