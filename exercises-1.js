@@ -67,7 +67,8 @@ returns I,love,computer,science,1,2,3 I@love@computer@science@1@2@3
 // typically, this would be a space
 
 // .pop()
-// removes the last element in an array and returns that element; changes the length of the array
+// removes the last element in an array and returns that element;
+//changes the length of the array
 
 var doges = ["Mr.", "Blue", "Sky", "Birmingham", 8, "Howler"];
 
@@ -124,9 +125,14 @@ returns [ 'Birmingham', 8, 'Howler' ]
 // array.splice(start, deleteCount[, item1[, item2[, ...]]])
 
 var goodness = ["good", "news", "is", 7, 3, 2, 9, "no", "news"];
-console.log(goodness.splice(1));
 
-returns [ 'news', 'is', 7, 3, 2, 9, 'no', 'news' ]
+//console.log(goodness.splice(1));
+//returns [ 'news', 'is', 7, 3, 2, 9, 'no', 'news' ]
+
+console.log(goodness.splice(4,1,"footy"));
+//returns [3]
+console.log(goodness);
+//returns [ 'good', 'news', 'is', 7, 'footy', 2, 9, 'no', 'news' ]
 
 // .filter()
 // creates a new array with only those members that pass a certain function's test
