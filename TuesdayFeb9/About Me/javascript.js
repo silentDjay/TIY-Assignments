@@ -1,12 +1,14 @@
+// Changes the font family for the body of the HTML
 var bodyWorks = document.querySelector("body");
-
 bodyWorks.style.fontFamily = '"Arial Black", Gadget, sans-serif';
 
+// creates variables representing html object IDs
 var fullName = document.querySelector("#fullname");
 var homeTown = document.querySelector("#hometown");
 var filmReel = document.querySelector("#movie");
 var foodStuff = document.querySelector("#food");
 
+//adds text content to the objects based on the ID variables created above
 fullName.textContent = "Jeremy Martin Smith";
 homeTown.textContent = "Kalamazoo, Michigan";
 filmReel.textContent = "Wet Hot American Summer";
