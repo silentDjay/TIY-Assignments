@@ -1,4 +1,4 @@
-var bodyWorks = document.querySelector('body');
+var bodyWorks = document.querySelector("body");
 
 bodyWorks.style.fontFamily = '"Arial Black", Gadget, sans-serif';
 
@@ -12,12 +12,17 @@ homeTown.textContent = "Kalamazoo, Michigan";
 filmReel.textContent = "Wet Hot American Summer";
 foodStuff.textContent = "Gruyere cheese";
 
-var listMember = document.getElementsByTagName("li");
+var listMember = document.getElementsByTagName("li"); //this creates an array, called ListMember of all of the "li"s
 
 for (var myCounter = 0; myCounter < listMember.length; myCounter++){
   console.log(listMember);
-  listMember[myCounter].className = "listitem";
-  listMember[myCounter].style= "color:red";
+  listMember[myCounter].className = "listitem";//changes the class of all listMember to listitem
+  listMember[myCounter].style= "color:red";//changes the color of every listMember to red
 }
 
-// add an image to your page
+//add an image to the page
+var picturemy = document.createElement("img");
+picturemy.src = "https://media.licdn.com/mpr/mpr/shrink_100_100/p/2/000/1d5/262/066889f.jpg";
+
+var imageHost = document.querySelector("ul");
+imageHost.appendChild(picturemy);
