@@ -1,7 +1,7 @@
 var favMov = {
     title: "Wet Hot American Summer",
     duration: 100,
-    stars: ["Coop", "Andy", "Debbie", "Jim Stansil"]
+    stars: ["Coop", "Andy", "Debbie", "Jim Stansil", "McKinley"]
 }
 
 function filmReel () {
