@@ -1,7 +1,12 @@
 #Gihub API questions#
 
 How does the API handle authentication?
+
+  _There are three ways that the GitHub API handles authentication: Basic, with an OAuth2 Token, or with an OAuth2 Key/Secret. Basic requires a curl command of https://api.github.com with -u "[yourusername]". An OAuth2 Token can be provided with a curl command either as a header (curl -H "Authorization: token OAUTH-TOKEN") or as a parameter (curl https://api.github.com/?access_token=OAUTH-TOKEN). An OAuth2 Key/Secret is provided as a parameter as well (curl 'https://api.github.com/users/whatever?client_id=xxxx&client_secret=yyyy')._
+
   Do I need to authenticate?
+
+    _
   What can I do with an unauthenticated request?
   How can I authenticate my request? (3 ways)
 How do I ask the API for...
