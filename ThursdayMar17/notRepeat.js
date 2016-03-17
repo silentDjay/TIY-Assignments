@@ -11,6 +11,7 @@ function notRepeat(str){
                 console.log("no matches");
                 // do nothing
             }
+            //I also need to restore the original array (with splice as well, I believe) before I can compare anything else with it
     }
 }
 
